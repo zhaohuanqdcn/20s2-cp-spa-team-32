@@ -1,0 +1,45 @@
+1 - comment
+procedure p;
+Select p such that Calls(p, "happy")
+none
+5000
+2 - comment
+procedure p;
+Select p such that Calls(p, 1)
+none
+5000
+3 - comment
+procedure p;
+Select p such that Calls(1, p)
+none
+5000
+4 - comment
+procedure p; stmt s;
+Select s such that Calls(s, _)
+none
+5000
+5 - comment
+procedure p; 
+Select p such that Calls("z", _)
+none
+5000
+6 - comment
+procedure p; assign a;
+Select p such that Calls(a, _)
+none
+5000
+7 - comment
+procedure p; while w;
+Select p such that Calls(w, _)
+none
+5000
+8 - comment
+procedure p; if ifs;
+Select p such that Calls(ifs, _)
+none
+5000
+9 - comment
+procedure p;
+Select p such that Calls(p, p)
+none
+5000

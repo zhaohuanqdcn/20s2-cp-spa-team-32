@@ -1,0 +1,61 @@
+procedure assignment {
+	a = a * b - c / d + e - f * g % h;							// 1
+	b = a * (b - c) / d + (e - f) * g % h;						// 2
+	c = a * ((b - c) / d + (e - f)) * g % h;					// 3
+	d = a * (b - c / d) + (e - f * g) % h;						// 4
+	e = (a * b - c) / (d + e) - f * (g % h);					// 5
+}
+
+procedure  ifpattern {
+	if ((a >= 0) || (b < a)) then {								// 6
+		read a;													// 7
+	} else {			
+		read b;													// 8
+	}
+
+	if ((a >= 0) || ((b < a) && (c == d))) then {				// 9
+		read a;													// 10
+	} else {
+		read b;													// 11
+	}
+
+	if (((a >= 0) || (b < a)) && (c == d) && (e < f)) then {	// 12
+		read a;													// 13
+	} else {
+		read b;													// 14
+	}
+
+	if (((a >= 0) || (b < a)) && (c == d) || (x < z) || (e < f)) then { // 15
+		read a;													// 16
+	} else {
+		read b;													// 17
+	}
+
+	if (1 > 2) then {											// 18
+		read a;													// 19
+	} else {
+		read b;													// 20
+	}
+}
+
+procudure whilepattern {
+	while (x > 0) {												// 21
+		print z;												// 22
+	}
+
+	while ((x>0) && (a > b)){									// 23
+		print z;												// 24
+	}
+
+	while ((x > 0) && ((a > b) || (d == e)) && (w < q)){		// 25
+		print z;												// 26
+	}
+
+	while ((x > 0) && (a > b) || ((d == e) && (w < q))){		// 27
+		print z;												// 28
+	}
+	
+	while (1 > 2) {												// 29
+		print z;												// 30
+	}
+}

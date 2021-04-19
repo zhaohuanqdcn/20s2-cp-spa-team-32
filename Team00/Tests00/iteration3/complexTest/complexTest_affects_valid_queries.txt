@@ -1,0 +1,60 @@
+1 - comment
+stmt s;
+Select s such that Affects(s, _)
+3, 7, 17, 18, 20, 30, 37, 38, 39, 41, 44, 45, 42, 46, 48, 49, 53, 55, 57, 58, 61, 62, 66, 69, 70, 73, 75, 77, 78, 80
+5000
+2 - comment
+assign a;
+Select a such that Affects(a, _)
+3, 7, 17, 18, 20, 30, 37, 38, 39, 41, 44, 45, 42, 46, 48, 49, 53, 55, 57, 58, 61, 62, 66, 69, 70, 73, 75, 77, 78, 80
+5000
+3 - comment
+stmt s;
+Select s such that Affects(s, 5)
+3
+5000
+4 - comment
+stmt s;
+Select s such that Affects(20, s)
+22
+5000
+5 - comment
+assign a;
+Select a such that Affects(a, 5)
+3
+5000
+6 - comment
+assign a;
+Select a such that Affects(20, a)
+22
+5000
+7 - comment
+stmt s;
+Select s such that Affects(s, 67)
+38, 44, 55, 62
+5000
+8 - comment
+assign a;
+Select a such that Affects(a, 67)
+38, 44, 55, 62
+5000
+9 - comment
+stmt s;
+Select s such that Affects(s, s)
+17, 18, 30, 41, 49, 53, 55, 61, 66, 69, 80
+5000
+10 - comment
+assign a;
+Select a such that Affects(a, a)
+17, 18, 30, 41, 49, 53, 55, 61, 66, 69, 80
+5000
+11 - comment
+
+Select BOOLEAN such that Affects(3, 4)
+TRUE
+5000
+12 - comment
+stmt s; assign a;
+Select <s, a> such that Affects(s, 4)
+3 14,3 17,3 18,3 20,3 22,3 25,3 28,3 3,3 30,3 31,3 37,3 38,3 39,3 4,3 41,3 42,3 44,3 45,3 46,3 48,3 49,3 5,3 53,3 55,3 57,3 58,3 60,3 61,3 62,3 66,3 67,3 68,3 69,3 7,3 70,3 72,3 73,3 75,3 76,3 77,3 78,3 8,3 80,3 81
+5000

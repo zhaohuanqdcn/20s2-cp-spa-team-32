@@ -1,0 +1,18 @@
+procedure a {
+	a = b + c - d;		// 1
+	q = a + 1;			// 2
+	call b;				// 3
+	z = z;				// 4
+	x = x + z + y;		// 5
+	call c;				// 6
+}
+
+procedure b {
+	p = 1 + q * b;		// 7
+	e = r - u / 10;		// 8
+}
+
+prcedure c {
+	u = t * t - x;		// 9
+	n = u + a;			// 10
+}

@@ -1,0 +1,155 @@
+1 - comment
+stmt s;
+Select s such that Parent*(4, 5)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+5000
+2 - comment
+stmt s;
+Select s such that Parent*(s, _)
+4, 7, 11, 16
+5000
+3 - comment
+stmt s;
+Select s such that Parent*(_, s)
+5, 6, 7, 8, 9, 12, 13, 14, 15, 16, 17, 18
+5000
+4 - comment
+stmt s;
+Select s such that Parent*(4, s)
+5, 6, 7, 8, 9
+5000
+5 - comment
+stmt s;
+Select s such that Parent*(7, s)
+8, 9
+5000
+6 - comment
+stmt s;
+Select s such that Parent*(11, s)
+12, 13, 14, 15, 16, 17, 18
+5000
+7 - comment
+stmt s;
+Select s such that Parent*(s, 7)
+4
+5000
+8 - comment
+stmt s; 
+Select s such that Parent*(s, 9)
+4, 7
+5000
+9 - comment
+stmt s;
+Select s such that Parent*(s, 14)
+11
+5000
+10 - comment
+stmt s;
+Select s such that Parent*(s, 17)
+11, 16
+5000
+11  - comment
+stmt s; while w;
+Select s such  that Parent*(s, w)
+11
+5000
+12 - comment
+stmt s; while w;
+Select s such that Parent*(w, s)
+5, 6, 7, 8, 9, 17
+5000
+13 - comment
+stmt s; while w;
+Select w such that Parent*(s, w)
+16
+5000
+14 - comment
+stmt s; while w;
+Select w such that Parent*(w, s)
+4, 16
+5000
+15 - comment
+stmt s; if ifs;
+Select s such that Parent*(s, ifs)
+4
+5000
+16 - comment
+stmt s; if ifs;
+Select s such that Parent*(ifs, s)
+8, 9, 12, 13, 14, 15, 16, 17, 18
+5000
+17 - comment
+stmt s; if ifs;
+Select ifs such that Parent*(s, ifs)
+7
+5000
+18 - comment
+stmt s; if ifs;
+Select ifs such that Parent*(ifs, s)
+7, 11
+5000
+19 - comment
+assign a;
+Select a such that Parent*(4, 5)
+1, 2, 3, 5, 6, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19
+5000
+20 - comment
+assign a;
+Select a such that Parent*(_, a)
+5, 6, 8, 9, 12, 13, 14, 15, 17, 18
+5000
+21 - comment
+assign a;
+Select a such that Parent*(4, a)
+5, 6, 8, 9
+5000
+22 - comment
+assign a;
+Select a such that Parent*(7, a)
+8, 9
+5000
+23 - comment
+assign a;
+Select a such that Parent*(11, a)
+12, 13, 14, 15, 17, 18
+5000
+24 - comment
+assign a; while w;
+Select a such that Parent*(w, a)
+5, 6, 8, 9, 17
+5000
+25 - comment
+assign a; while w;
+Select w such that Parent*(w, a)
+4, 16
+5000
+26 - comment
+assign a; if ifs;
+Select a such that Parent*(ifs, a)
+8, 9, 12, 13, 14, 15, 17, 18
+5000
+27 - comment
+assign a; if ifs;
+Select ifs such that Parent*(ifs, a)
+7, 11
+5000
+28 - comment
+while w;
+Select w such that Parent*(w, _)
+4, 16
+5000
+29 - comment
+while w;
+Select w such that Parent*(_, w)
+16
+5000
+30 - comment
+if ifs;
+Select ifs such that Parent*(ifs, _)
+7, 11
+5000
+31 - comment
+if ifs;
+Select ifs such that Parent*(_, ifs)
+7
+5000

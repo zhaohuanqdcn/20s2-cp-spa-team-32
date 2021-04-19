@@ -1,0 +1,30 @@
+1 - comment
+procedure p;
+Select p such that Calls(p, _)
+alpha, charlie
+5000
+2 - comment
+procedure p;
+Select p such that Calls(_, p)
+beta, charlie, delta
+5000
+3 - comment
+procedure p;
+Select p such that Calls("alpha", p)
+beta, charlie
+5000
+4 - comment
+procedure p;
+Select p such that Calls(p, "beta")
+alpha, charlie
+5000
+5 - comment
+procedure p; procedure q;
+Select p such that Calls(q, _)
+alpha, beta, charlie, delta
+5000
+6 - comment
+procedure p; procedure q;
+Select q such that Calls(_, p)
+alpha, beta, charlie, delta
+5000

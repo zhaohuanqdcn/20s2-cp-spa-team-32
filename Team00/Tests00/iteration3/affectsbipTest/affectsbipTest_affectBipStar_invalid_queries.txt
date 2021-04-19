@@ -1,0 +1,60 @@
+1 - comment
+stmt s;
+Select s such that AffectsBip*(4, 3)
+none
+5000
+2 - comment
+assign a;
+Select a such that AffectsBip*(5, 3)
+none
+5000
+3 - comment
+stmt s;
+Select s such that AffectsBip*(s, 11)
+none
+5000
+4 - comment
+stmt s;
+Select s such that AffectsBip*(9, 11)
+none
+5000
+5 - comment
+
+Select BOOLEAN such that AffectsBip*(4, 3)
+FALSE
+5000
+6 - comment
+while w;
+Select BOOLEAN such that AffectsBip*(w, _)
+FALSE
+5000
+7 - comment
+while w;
+Select w such that AffectsBip*(w, _)
+none
+5000
+8 - comment
+if ifs;
+Select ifs such that AffectsBip*(ifs, _)
+none
+5000
+9 - comment
+if ifs;
+Select BOOLEAN such that AffectsBip*(ifs, _)
+FALSE
+5000
+10 - comment
+print p;
+Select BOOLEAN such that AffectsBip*(p, _)
+FALSE
+5000
+11 - comment
+procedure p;
+Select p such that AffectsBip*(_, p)
+none
+5000
+12 - comment
+read r;
+Select r such that AffectsBip*(_, r)
+none
+5000

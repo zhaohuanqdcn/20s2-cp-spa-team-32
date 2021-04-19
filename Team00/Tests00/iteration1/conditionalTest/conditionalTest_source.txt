@@ -1,0 +1,15 @@
+procedure conditionalTest {
+	a = 1;				
+	b = a + 1; 			
+	c = a + b;			
+	while(a > 0) {		
+		a = a - 1; 		
+		b = a + c;		
+	}
+	if (b > c) then {	
+		d = c;			
+	} else {			
+		e = b;			
+	}
+	a = a - b * c;      
+}

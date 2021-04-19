@@ -1,0 +1,31 @@
+procedure nestedTest {
+	a = 1;						
+	b = a + 1; 					
+	c = a + b;					
+	while(a > 0) {			
+		a = a - 1; 				
+		b = a + c;				
+		if (b > c) then {  		
+			d = c;				
+		} else {			
+			e = b;				
+		}
+	}
+	
+	a = a - b * c;				
+
+	if ((e < 10) && (a > e)) then { 
+		e = e + 1;				
+		a = a - e;				
+	} else {
+		e = e - 1;				
+		c = c + e;				
+		while ((d <= 20) || (d < (a + b))) { 
+			d = d + a * (c - e); 
+		}
+
+		d = d - 1;				
+	}
+	
+	c = c / a + (b - d);	
+}

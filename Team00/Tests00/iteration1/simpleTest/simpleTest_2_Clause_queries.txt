@@ -1,0 +1,325 @@
+1 - comment
+stmt s; assign a;
+Select s such that Follows(s, _) pattern a(_, _)
+1, 2, 3
+5000
+2 - comment
+stmt s; assign a;
+Select s such that Follows(_, s) pattern a(_, _)
+2, 3, 4
+5000
+3 - comment
+stmt s; assign a;
+Select s such that Follows(s, _) pattern a(_, _"a"_)
+1, 2, 3
+5000
+4 - comment
+stmt s; assign a;
+Select s such that Follows(s, _) pattern a("b", _)
+1, 2, 3
+5000
+5 - comment
+stmt s; assign a;
+Select s such that Follows(_, s) pattern a(_, _"c"_)
+2, 3, 4
+5000
+6 - comment
+stmt s; assign a;
+Select s such that Follows(_, s) pattern a("c", _)
+2, 3, 4
+5000
+7 - comment
+assign a1; assign a;
+Select a1 such that Follows(a1, _) pattern a(_, _)
+1, 2, 3
+5000
+8 - comment
+assign a1; assign a;
+Select a1 such that Follows(_, a1) pattern a(_, _)
+2, 3, 4
+5000
+9 - comment
+assign a1; assign a;
+Select a1 such that Follows(a1, _) pattern a(_, _"a"_)
+1, 2, 3
+5000
+10 - comment
+assign a1; assign a;
+Select a1 such that Follows(a1, _) pattern a("b", _)
+1, 2, 3
+5000
+11 - comment
+assign a1; assign a;
+Select a1 such that Follows(_, a1) pattern a(_, _"c"_)
+2, 3, 4
+5000
+12 - comment
+assign a1; assign a;
+Select a1 such that Follows(_, a1) pattern a("c", _)
+2, 3, 4
+5000
+13 - comment
+assign a;
+Select a such that Follows(a, _) pattern a(_, _)
+1, 2, 3
+5000
+14 - comment
+assign a;
+Select a such that Follows(_, a) pattern a(_, _)
+2, 3, 4
+5000
+15 - comment
+assign a;
+Select a such that Follows(a, _) pattern a(_, _"a"_)
+2, 3
+5000
+16 - comment
+assign a;
+Select a such that Follows(a, _) pattern a("b", _)
+2
+5000
+17 - comment
+assign a;
+Select a such that Follows(_, a) pattern a(_, _"c"_)
+4
+5000
+18 - comment
+assign a;
+Select a such that Follows(_, a) pattern a("c", _)
+3
+5000
+19 - comment
+stmt s; assign a;
+Select s such that Follows*(s, _) pattern a(_, _)
+1, 2, 3
+5000
+20 - comment
+stmt s; assign a;
+Select s such that Follows*(_, s) pattern a(_, _)
+2, 3, 4
+5000
+21 - comment
+stmt s; assign a;
+Select s such that Follows*(s, _) patttern a(_, _"a"_)
+1, 2, 3
+5000
+22 - comment
+stmt s; assign a;
+Select s such that Follows*(s, _) patttern a("b", _)
+1, 2, 3
+5000
+23 - comment
+stmt s; assign a;
+Select s such that Follows*(_, s) pattern a(_, _"c"_)
+2, 3, 4
+5000
+24 - comment
+stmt s; assign a;
+Select s such that Follows*(_, s) pattern a("c", _)
+2, 3, 4
+5000
+25 - comment
+assign a1; assign a;
+Select a1 such that Follows*(a1, _) pattern a(_, _)
+1, 2, 3
+5000
+26 - comment
+assign a1; assign a;
+Select a1 such that Follows*(_, a1) pattern a(_, _)
+2, 3, 4
+5000
+27 - comment
+assign a1; assign a;
+Select a1 such that Follows*(a1, _) patttern a(_, _"a"_)
+1, 2, 3
+5000
+28 - comment
+assign a1; assign a;
+Select a1 such that Follows*(a1, _) patttern a("b", _)
+1, 2, 3
+5000
+29 - comment
+assign a1; assign a;
+Select a1 such that Follows*(_, a1) pattern a(_, _"c"_)
+2, 3, 4
+5000
+30 - comment
+assign a1; assign a;
+Select a1 such that Follows*(_, a1) pattern a("c", _)
+2, 3, 4
+5000
+31 - comment
+assign a;
+Select a such that Follows*(a, _) pattern a(_, _)
+1, 2, 3
+5000
+32 - comment
+assign a;
+Select a such that Follows*(_, a) pattern a(_, _)
+2, 3, 4
+5000
+33 - comment
+assign a;
+Select a such that Follows*(a, _) pattern a(_, _"a"_)
+2, 3
+5000
+34 - comment
+assign a;
+Select a such that Follows*(a, _) pattern a("b", _)
+2
+5000
+35 - comment
+assign a;
+Select a such that Follows*(_, a) pattern a(_, _"c"_)
+4
+5000
+36 - comment
+assign a;
+Select a such that Follows*(_, a) pattern a("c", _)
+3
+5000
+37 - comment
+stmt s; assign a;
+Select s such that Follows*(1, s) pattern a(_, _"b"_)
+2, 3, 4
+5000
+38 - comment
+stmt s; assign a;
+Select s such that Follows*(s, 4) pattern a("a", _)
+1, 2, 3
+5000
+39 - comment
+stmt s; assign a;
+Select s such that Uses(s, "a") pattern a(_, _)
+2, 3
+5000
+40 - comment
+stmt s; assign a;
+Select s such that Uses(s, "a") pattern a(_, _"b"_)
+2, 3
+5000
+41 - comment
+stmt s; assign a;
+Select s such that Uses(s, "a") pattern a("b", _)
+2, 3
+5000
+42 - comment
+assign a1; assign a;
+Select a1 such that Uses(a1, "a") pattern a(_, _)
+2, 3
+5000
+43 - comment
+assign a1; assign a;
+Select a1 such that Uses(a1, "a") pattern a(_, _"b"_)
+2, 3
+5000
+44 - comment
+assign a1; assign a;
+Select a1 such that Uses(a1, "a") pattern a("b", _)
+2, 3
+5000
+45 - comment
+assign a;
+Select a such that Uses(a, "a") pattern a(_, _)
+2, 3
+5000
+46 - comment
+assign a;
+Select a such that Uses(a, "a") pattern a(_, _"b"_)
+3
+5000
+47 - comment
+assign a;
+Select a such that Uses(a, "a") pattern a("b", _)
+2
+5000
+48 - comment
+variable v; assign a;
+Select v such that Uses(3, v) pattern a(_, _"b"_)
+a, b
+5000
+49 - comment
+variable v; assign a;
+Select v such that Uses(3, v) pattern a("c", _)
+a, b
+5000
+50 - comment
+variable v; stmt s; assign a;
+Select v such that Uses(s, v) pattern a(_, _"a"_)
+a, b, c
+5000
+51 - comment
+variable v; stmt s; assign a;
+Select v such that Uses(s, v) pattern a("b", _)
+a, b, c
+5000
+52 - comment
+variable v; assign a1; assign a;
+Select v such that Uses(a1, v) pattern a(_, _"a"_)
+a, b, c
+5000
+53 - comment
+variable v; assign a1; assign a;
+Select v such that Uses(a1, v) pattern a("b", _)
+a, b, c
+5000
+54 - comment
+variable v; assign a;
+Select v such that Uses(a, v) pattern a(_, _"a"_)
+a, b
+5000
+55 - comment
+variable v; assign a;
+Select v such that Uses(a, v) pattern a("b", _)
+a
+5000
+56 - comment
+stmt s; assign a;
+Select s such that Modifies(s, "d") pattern a(_, _"c"_)
+4
+5000
+57 - comment
+stmt s; assign a;
+Select s such that Modifies(s, "d") pattern a("d", _)
+4
+5000
+58 - comment
+variable v; assign a;
+Select v such that Modifies(3, v) pattern a("c", _)
+c
+5000
+59 - comment
+variable v; assign a;
+Select v such that Modifies(3, v) pattern a(_, _"b"_)
+c
+5000
+60 - comment
+variable v; stmt s; assign a;
+Select v such that Modifies(s, v) pattern a(_, _"b"_)
+a, b, c, d
+5000
+61 - comment
+variable v; stmt s; assign a;
+Select v such that Modifies(s, v) pattern a("a", _)
+a, b, c, d
+5000
+62 - comment
+variable v; assign a1; assign a;
+Select v such that Modifies(a1, v) pattern a(_, _"b"_)
+a, b, c, d
+5000
+63 - comment
+variable v; assign a1; assign a;
+Select v such that Modifies(a1, v) pattern a("a", _)
+a, b, c, d
+5000
+64 - comment
+variable v; assign a;
+Select v such that Modifies(a, v) pattern a(_, _"b"_)
+c
+5000
+65 - comment
+variable v; assign a;
+Select v such that Modifies(a, v) pattern a("a", _)
+a
+5000

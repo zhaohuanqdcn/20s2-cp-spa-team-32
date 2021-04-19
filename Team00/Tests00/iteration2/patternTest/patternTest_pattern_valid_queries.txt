@@ -1,0 +1,110 @@
+1 - comment
+assign a;
+Select a pattern a(_, _)
+1, 2, 3, 4, 5
+5000
+2 - comment
+assign a;
+Select a pattern a(_, _"a"_)
+1, 2, 3, 4, 5
+5000
+3 - comment
+assign a;
+Select a pattern a(_, _"a * b"_)
+1, 5
+5000
+4 - comment
+assign a;
+Select a pattern a(_, _"g % h"_)
+5
+5000
+5 - comment
+assign a;
+Select a pattern a(_, "a * b - c / d + e - f * g % h")
+1
+5000
+6 - comment
+assign a;
+Select a pattern a(_, _"a * b - c / d + e - f * g % h"_)
+1
+5000
+7 - comment
+assign a;
+Select a pattern a(_, _"b - c / d"_)
+4
+5000
+8 - comment
+assign a;
+Select a pattern a(_, _"b - c"_)
+2, 3
+5000
+9 - comment
+assign a;
+Select a pattern a("b", _)
+2
+5000
+10 - comment
+assign a; variable v;
+Select a pattern a(v, _)
+1, 2, 3, 4, 5
+5000
+11 - comment
+assign a; variable v;
+Select v pattern a(v, _)
+a, b, c, d, e
+5000
+12 - comment
+assign a; variable v;
+Select v pattern a(v, _"f * g"_)
+a, d
+5000
+1 - comment
+if ifs;
+Select ifs pattern ifs(_, _, _)
+6, 9, 12, 15
+5000
+2 - comment
+if ifs;
+Select ifs pattern ifs("a", _, _)
+6, 9, 12, 15
+5000
+3 - comment
+if ifs;
+Select ifs pattern ifs("x", _, _)
+15
+5000
+4 - comment
+if ifs; variable v;
+Select ifs pattern ifs(v, _, _)
+6, 9, 12, 15
+5000
+5 - comment
+if ifs; variable v;
+Select v pattern ifs(v, _, _)
+a, b, c, d, e, f, x, w
+5000
+1 - comment
+while w;
+Select w pattern w(_, _)
+21, 23, 25, 27
+5000
+2 - comment
+while w;
+Select w pattern w("x", _)
+21, 23, 25, 27
+5000
+3 - comment
+while w;
+Select w pattern w("q", _)
+25, 27
+5000
+4 - comment
+while w; variable v;
+Select w pattern w(v, _)
+21, 23, 25, 27
+5000
+5 - comment
+while w; variable v;
+Select v pattern w(v, _)
+x, a, b, d, e, w, q
+5000

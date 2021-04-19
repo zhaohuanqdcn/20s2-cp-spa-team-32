@@ -1,0 +1,10 @@
+1 - comment
+assign a;
+Select a pattern a(_, _"((a) + (((b))))"_)
+1
+5000
+2 - comment
+assign a;
+Select a pattern a(_, _"a + b"_)
+1
+5000

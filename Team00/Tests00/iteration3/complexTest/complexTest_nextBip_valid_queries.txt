@@ -1,0 +1,60 @@
+1 - comment
+stmt s; 
+Select s such that NextBip(s, 4)
+3
+5000
+2 - comment
+stmt s;
+Select s such that NextBip(5, s)
+6
+5000
+3 - comment
+stmt s;
+Select s such that NextBip(6, s)
+13
+5000
+4 - comment
+stmt s;
+Select s such that NextBip(12, s)
+19
+5000
+5 - comment
+stmt s;
+Select s such that NextBip(s, 10)
+9, 15
+5000
+6 - comment
+prog_line n;
+Select n such that NextBip(44, n)
+40
+5000
+7 - comment
+prog_line n; 
+Select n such that NextBip(81, n)
+82
+5000
+8 - comment
+assign a;
+Select a such that NextBip(a, 83)
+none
+5000
+9 - comment
+assign a; print p;
+Select a such that NextBip(p, a)
+7, 22, 67, 72
+5000
+10 - comment
+assign a;
+Select a such that NextBip(19, a)
+20
+5000
+11 - comment
+call c; stmt s;
+Select s such that NextBip(c, s)
+10, 13, 20
+5000
+12 - comment
+call c; stmt s;
+Select c such that NextBip(c, s)
+6, 9, 15, 19
+5000

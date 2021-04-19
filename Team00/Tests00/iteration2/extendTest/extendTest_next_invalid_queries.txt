@@ -1,0 +1,40 @@
+1 - comment
+prog_line n;
+Select n such that Next(9, 10)
+none
+5000
+2 -  comment
+prog_line n;
+Select n such that Next(3, 2)
+none
+5000
+3 - comment
+prog_line n;
+Select n such that Next(10, 12)
+none
+5000
+4 - comment
+prog_line n;
+Select n such that Next(n, n)
+none
+5000
+5 - comment
+variable v;
+Select v such that Next(v, _)
+none
+5000
+6 - comment
+variable v;
+Select v such that Next(_, v)
+none
+5000
+7 - comment
+constant c;
+Select c such that Next(c,_)
+none
+5000
+8 - comment
+constant c;
+Select c such that Next(_, c)
+none
+5000

@@ -1,0 +1,90 @@
+1 - comment
+stmt s;
+Select s such that Modifies(s, _)
+1, 2, 3, 4, 5, 6, 7, 8, 13, 14, 16, 17, 18, 19, 20, 22, 24, 25, 26, 27, 28, 29, 30, 31
+5000
+2 - comment
+stmt s;
+Select s such that Modifies(s, "a")
+3, 6, 13, 16, 17
+5000
+3 - comment
+stmt s; variable v;
+Select s such that Modifies(s, v)
+1, 2, 3, 4, 5, 6, 7, 8, 13, 14, 16, 17, 18, 19, 20, 22, 24, 25, 26, 27, 28, 29, 30, 31
+5000
+4 - comment
+stmt s; variable v;
+Select v such that Modifies(s, v)
+a, b, c, d, e, p, u, r, z, o, s
+5000
+5 - comment
+assign a;
+Select a such that Modifies(a, _)
+3, 4, 5, 7, 8, 14, 17, 18, 20, 22, 25, 28, 30, 31
+5000
+6 - comment
+assign a;
+Select a such that Modifies(a, "p")
+20, 22
+5000
+7 - comment
+assign a; variable v;
+Select a such that Modifies(a, v)
+3, 4, 5, 7, 8, 14, 17, 18, 20, 22, 25, 28, 30, 31
+5000
+8 - comment
+assign a; variable v;
+Select v such that Modifies(a, v)
+a, b, c, d, z, e, p, u, r
+5000
+9 - comment
+while w; 
+Select w such that Modifies(w, _)
+16, 26
+5000
+10 - comment
+while w; variable v;
+Select w such that Modifies(w, v)
+16, 26
+5000
+11 - comment
+while w; variable v;
+Select v such that Modifies(w, v)
+a, e, s, r, z
+5000
+12 - comment
+if ifs; 
+Select ifs such that Modifies(ifs, _)
+13, 24, 29
+5000
+13 - comment
+if ifs; variable v;
+Select ifs such that Modifies(ifs, v)
+13, 24, 29
+5000
+14 - comment
+if ifs; variable v;
+Select v such that Modifies(ifs, v)
+d, a, e, u, s, r, z
+5000
+15 - comment
+procedure p;
+Select p such that Modifies(p, _)
+alpha, charlie, delta
+5000
+16 - comment
+variable v;
+Select v such that Modifies("alpha", v)
+u, o, a, b, c, z, d, e, p, s, r
+5000
+17 - comment
+variable v;
+Select v such that Modifies("charlie", v)
+d, a, e, p, u, s, r, z
+5000
+18 - comment
+variable v;
+Select v such that Modifies("delta", v)
+p, u, s, e, r, z
+5000

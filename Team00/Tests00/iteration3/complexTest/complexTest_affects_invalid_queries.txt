@@ -1,0 +1,60 @@
+1 - comment
+stmt s;
+Select s such that Affects(4, 3)
+none
+5000
+2 - comment
+assign a;
+Select a such that Affects(5, 3)
+none
+5000
+3 - comment
+stmt s;
+Select s such that Affects(s, 11)
+none
+5000
+4 - comment
+stmt s;
+Select s such that Affects(9, 11)
+none
+5000
+5 - comment
+
+Select BOOLEAN such that Affects(4, 3)
+FALSE
+5000
+6 - comment
+while w;
+Select BOOLEAN such that Affects(w, _)
+FALSE
+5000
+7 - comment
+while w;
+Select w such that Affects(w, _)
+none
+5000
+8 - comment
+if ifs;
+Select ifs such that Affects(ifs, _)
+none
+5000
+9 - comment
+if ifs;
+Select BOOLEAN such that Affects(ifs, _)
+FALSE
+5000
+10 - comment
+print p;
+Select BOOLEAN such that Affects(p, _)
+FALSE
+5000
+11 - comment
+procedure p;
+Select p such that Affects(_, p)
+none
+5000
+12 - comment
+read r;
+Select r such that Affects(_, r)
+none
+5000

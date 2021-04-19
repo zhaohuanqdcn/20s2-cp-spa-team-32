@@ -1,0 +1,15 @@
+1 - comment
+stmt s;
+Select s such that Follows*(1, s)
+2, 3, 4, 5, 6, 7, 8, 9
+5000
+2 - comment
+stmt s;
+Select s such that Follows*(s, 12)
+10, 11
+5000
+3 - comment
+stmt s;
+Select s such that Follows*(s, 20)
+none
+5000

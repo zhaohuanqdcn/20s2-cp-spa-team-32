@@ -1,0 +1,135 @@
+1 - comment
+stmt s;
+Select s such that Follows*(1, 2)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+5000
+2 - comment
+stmt s;
+Select s such that Follows*(s, 4)
+1, 2, 3
+5000
+3 - comment
+stmt s;
+Select s such that Follows*(1, s)
+2, 3, 4, 7, 10
+5000
+4 - comment
+stmt s;
+Select s such that Follows*(s, _)
+1, 2, 3, 4, 5, 7
+5000
+5 - comment
+stmt s;
+Select s such that Follows*(_, s)
+2, 3, 4, 6, 7, 10
+5000
+6 - comment
+stmt s;
+Select s such that Follows*(_, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+5000
+7 - comment
+assign a;
+Select a such that Follows*(a, _)
+1, 2, 3, 5
+5000
+8 - comment 
+assign a;
+Select a such that Follows*(_, a)
+2, 3, 6, 10
+5000
+9 - comment
+assign a;
+Select a such that Follows*(a, 3)
+1, 2
+5000
+10 - comment 
+assign a;
+Select a such that Follows*(2, a)
+3, 10
+5000
+11 - comment
+stmt s; assign a;
+Select s such that Follows*(s, a)
+1, 2, 3, 4, 5, 7
+5000
+12 - comment
+stmt s; assign a;
+Select s such that Follows*(a, s)
+2, 3, 4, 6, 7, 10
+5000
+13 - comment
+stmt s; assign a;
+Select a such that Follows*(s, a)
+2, 3, 6, 10
+5000
+14 - comment
+stmt s; assign a;
+Select a such that Follows*(a, s)
+1, 2, 3, 5
+5000
+15 - comment
+stmt s; while w;
+Select s such that Follows*(s, w)
+1, 2, 3
+5000
+16 - comment
+stmt s; while w;
+Select s such that Follows*(w, s)
+7, 10
+5000
+17 - comment
+stmt s; if ifs;
+Select s such that Follows*(s, ifs)
+1, 2, 3, 4
+5000
+18 - comment
+stmt s; if ifs;
+Select s such that Follows*(ifs, s)
+10
+5000
+19 - comment
+while w;
+Select w such that Follows*(w, _)
+4
+5000
+20 - comment
+while w;
+Select w such that Follows*(_, w)
+4
+5000
+21 - comment
+if ifs;
+Select ifs such that Follows*(ifs, _)
+7
+5000
+22 - comment
+if ifs;
+Select ifs such that Follows*(_, ifs)
+7
+5000
+23 - comment
+stmt s;
+Select s such that Follows*(s, 6)
+5
+5000
+24 - comment
+if ifs;
+Select ifs such that Follows*(ifs, 10)
+7
+5000
+25 - comment 
+if ifs;
+Select ifs such that Follows*(1, ifs)
+7
+5000
+26 - comment
+while w;
+Select w such that Follows*(w, 7)
+4
+5000
+27 - comment 
+while w;
+Select w such that Follows*(2, w)
+4 
+5000

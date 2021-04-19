@@ -1,0 +1,30 @@
+1 - comment
+assign a;
+Select a pattern a(_, _)
+3, 4, 5, 7, 8, 10, 11, 12, 14, 15, 19, 21, 23, 24, 26, 27, 28, 32, 33, 34, 35, 36, 38, 39, 41, 42, 43, 44, 46, 47
+5000
+2 - comment
+assign a;
+Select a pattern a(_, _"d"_)
+5, 14, 15, 21, 26, 27, 33, 39, 46, 47
+5000
+3 - comment
+assign a;
+Select a pattern a("c", _)
+3, 39, 44
+5000
+4 - comment
+assign a;
+Select a pattern a("c", _"c"_)
+39, 44
+5000
+5 - comment
+assign a; variable v;
+Select a pattern a(v, _)
+3, 4, 5, 7, 8, 10, 11, 12, 14, 15, 19, 21, 23, 24, 26, 27, 28, 32, 33, 34, 35, 36, 38, 39, 41, 42, 43, 44, 46, 47
+5000
+6 - comment
+assign a; variable v;
+Select a pattern a(v, _"d"_)
+5, 14, 15, 21, 26, 27, 33, 39, 46, 47
+5000

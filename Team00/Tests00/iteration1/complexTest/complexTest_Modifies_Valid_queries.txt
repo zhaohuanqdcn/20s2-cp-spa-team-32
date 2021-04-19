@@ -1,0 +1,85 @@
+1 - comment
+stmt s;
+Select s such that Modifies(s, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
+5000
+2 - comment
+stmt s;
+Select s such that Modifies(s, "c")
+3, 39, 40, 44
+5000
+3 - comment
+stmt s; variable v;
+Select s such that Modifies(s, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47
+5000
+4 - comment
+stmt s; variable v;
+Select v such that Modifies(s, v)
+a, b, c, d, e, f, z, x
+500
+5 - comment
+assign a;
+Select a such that Modifies(a, _)
+3, 4, 5, 7, 8, 10, 11, 12, 14, 15, 19, 21, 23, 24, 26, 27, 28, 32, 33, 34, 35, 36, 38, 39, 41, 42, 43, 44, 46, 47
+5000
+6 - comment
+assign a; 
+Select a such that Modifies(a, "a")
+7, 12, 14, 23, 26, 28, 33, 36, 42
+5000
+7 - comment
+assign a; variable v;
+Select a such that Modifies(a, v)
+3, 4, 5, 7, 8, 10, 11, 12, 14, 15, 19, 21, 23, 24, 26, 27, 28, 32, 33, 34, 35, 36, 38, 39, 41, 42, 43, 44, 46, 47
+5000
+8 - comment
+assign a; variable v;
+Select v such that Modifies(a, v)
+a, b, c, d, e, f, x, z
+5000
+9 - comment
+while w;
+Select w such that Modifies(w, _)
+6, 13, 18, 20, 31, 45
+5000
+10 - comment
+while w; 
+Select w such that Modifies(w, "d")
+6, 13, 18, 20, 45
+5000
+11 - comment
+while w; variable v;
+Select w such that Modifies(w, v)
+6, 13, 18, 20, 31, 45
+5000
+12 - comment
+while w; variable v;
+Select v such  that Modifies(w, v)
+a, b, d, e, f, x, z
+5000
+13 - comment
+if ifs;
+Select ifs such that Modifies(ifs, _)
+9, 16, 22, 25, 29, 40
+5000
+14 - comment
+if ifs; variable v;
+Select ifs such that Modifies(ifs, v)
+9, 16, 22, 25, 29, 40
+5000
+15 - comment
+if ifs; variable v;
+Select v such that Modifies(ifs, v)
+d, e, b, a, f, x, z, c
+5000
+16 - comment
+variable v;
+Select v such that Modifies(29, v)
+f
+5000
+17 - comment
+variable v;
+Select v such that Modifies(25, v)
+a, f
+5000

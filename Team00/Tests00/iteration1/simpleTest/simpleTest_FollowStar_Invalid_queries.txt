@@ -1,0 +1,115 @@
+1 - comment
+stmt s;
+Select s such that Follows*(s, s)
+none
+5000
+2 - comment
+stmt s;
+Select s such that Follows*(s, "S")
+none
+5000
+3 - comment
+stmt s;
+Select s such that Follows*(s, 0)
+none
+5000
+4 - comment
+stmt s;
+Select s such that Follows*(4, 3)
+none
+5000
+5 - comment
+while w;
+Select w such that Follows*(_, _)
+none
+5000
+6 - comment
+while w;
+Select w such that Follows*(w, _)
+none
+5000
+7 - comment 
+while w; 
+Select w such that Follows*(_, w)
+none
+5000
+8 - comment
+while w;
+Select w such that Follow*(w, w)
+none
+5000
+9 - comment
+while w;
+Select w such that Follows*(w, 3)
+none
+5000
+10 - comment
+while w;
+Select w such that Follows*(2, w)
+none
+5000
+11 - comment
+if ifs;
+Select ifs such that Follows*(_, _)
+none
+5000
+12 - comment
+if ifs;
+Select ifs such that Follows*(ifs, _)
+none
+5000
+13 - comment
+if ifs;
+Select ifs such that Follows*(_, ifs)
+none
+5000
+14 - comment 
+if ifs;
+Select ifs such that Follows*(ifs, ifs)
+none
+5000
+15 - comment
+if ifs;
+Select ifs such that Follows*(ifs, 3)
+none
+5000
+16 - comment 
+if ifs;
+Select ifs such that Follows*(1, ifs)
+none
+5000
+17 - comment
+variable v;
+Select v such that Follows*(v, v)
+none
+5000
+18 - comment 
+variable v; stmt s;
+Select s such that Follows*(s, v)
+none
+5000
+19 - comment
+variable v; stmt s;
+Select s such that Follows*(v, s)
+none
+5000
+20 - comment
+variable v; stmt s;
+Select v such that Follows*(s, v)
+none
+5000
+21 - comment
+constant c; stmt s;
+Select s such that Follows*(s, c)
+none
+5000
+22 - comment
+constant c; stmt s;
+Select s such that Follows*(c, s)
+none
+5000
+23 - comment
+constant c;
+Select c such that Follows*(c, c)
+none
+5000

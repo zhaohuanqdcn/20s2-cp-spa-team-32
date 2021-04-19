@@ -1,0 +1,40 @@
+procedure a{
+	call b;
+	call c;
+}
+
+procedure b{
+	call c;
+	call d;
+}
+
+procedure c{
+	call e;
+}
+
+procedure d{
+	call c;
+	call e;
+}
+
+procedure e{read a;}
+
+procedure f{
+	call g;
+	call h;
+}
+
+procedure g{
+	call h;
+}
+
+procedure h{read b;}
+
+procedure i{
+	call a;
+	call d;
+}
+
+procedure j{
+	call g;
+}

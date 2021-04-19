@@ -1,0 +1,50 @@
+1 - comment
+prog_line n;
+Select n such that NextBip*(9, 10)
+none
+5000
+2 -  comment
+prog_line n;
+Select n such that NextBip*(3, 2)
+none
+5000
+3 - comment
+prog_line n;
+Select n such that NextBip*(10, 12)
+none
+5000
+4 - comment
+stmt s;
+Select s such that NextBip*(s, 1)
+none
+5000
+5 - comment
+stmt s;
+Select s such that NextBip*(s, 36)
+none
+5000
+6- comment
+stmt s;
+Select s such that NextBip*(34, s)
+none
+5000
+7 - comment
+variable v;
+Select v such that NextBip*(v, _)
+none
+5000
+8 - comment
+variable v;
+Select v such that NextBip*(_, v)
+none
+5000
+9 - comment
+constant c;
+Select c such that NextBip*(c, _)
+none
+5000
+10 - comment
+constant c;
+Select c such that NextBip*(_, c)
+none
+5000

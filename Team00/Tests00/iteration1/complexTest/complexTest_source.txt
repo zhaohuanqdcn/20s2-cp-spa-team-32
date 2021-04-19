@@ -1,0 +1,75 @@
+procedure complexTest {
+	read a; 
+	read b; 
+	c = 1;	
+	d = c + 1;
+	e = c + d;	
+
+	while(a > 0) {	
+		a = a - 1; 		
+		b = a + c;			
+		if (b > c) then {		
+			d = c;			
+		} else {			
+			e = b;		
+		}
+	}
+	
+	a = a - b * c;		
+
+	while ((((c > 0) && (d>0)) || (a < b)) || (e <= 20)) {
+		a = c + d * b;		
+		b = ((a + b) * ((c / d) - e));
+		if (b <= c) then {	
+			print b;		
+		} else { 
+			while (c >= b) {
+				b = b + 1;		
+				while (d >= e) {	
+					d = d + e / c;
+				}
+				if ((a * b) < (c + d + e)) then {	
+					a = a * b - c / e;	
+					f = a / e - c;	
+				} else { 
+					if ((a) < (c+d + e)) then {	
+						a = a / b - c / e * d;	
+					} else { 
+						f = f - a * d;	
+						a = a + f;
+						if (f <= 100) then {	
+							print f;	
+						} else {	
+							while (f <= 100) {	
+								f = f * f - f;
+							}
+						}
+						a = a * d;	
+					}
+					z = x;
+					x = x -1 * 10;
+				}
+				a = p * p; 
+			}		
+			print a; 
+		}
+		z = a * (y - x) + ((u - o) + q); 
+	}
+	c = c / a + (b - d);	
+
+	if ((e < 10) && (a > e)) then {
+		e = e + 1;			
+		a = a - e;				
+	} else {
+		e = e - 1;			
+		c = c + e;				
+		while ((d <= 20) || (d < (a + b))) {
+			d = d + a * (c - e);
+		}
+
+		d = d - 1;		
+	}
+
+	print a;		
+	print b;		
+}

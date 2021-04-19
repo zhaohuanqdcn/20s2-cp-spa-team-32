@@ -1,0 +1,150 @@
+1 - comment
+stmt s;
+Select s such that Follows(1, 2)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+5000
+2 - comment
+stmt s;
+Select s such that Follows(s, 3)
+2 
+5000
+3 - comment
+stmt  s;
+Select s such that Follows(s, _)
+1, 2, 3, 4, 5, 6, 10, 11, 12, 14, 15, 16
+5000
+4 - comment
+stmt s;
+Select s such that Follows(_, s)
+2, 3, 4, 6, 7, 10, 11, 13, 15, 16, 18, 19
+5000
+5 - comment
+stmt s; while w;
+Select s such that Follows(s, w)
+3, 15
+5000
+6 - comment
+stmt s; while w;
+Select s such that Follows(w, s)
+10, 18
+5000
+7 - comment
+stmt s; while w;
+Select w such that Follows(s, w)
+4, 16
+5000
+8 - comment
+stmt s; while w;
+Select w such that Follows(w, s)
+4, 16
+5000
+9 - comment
+stmt s; if ifs;
+Select s such that Follows(s, ifs)
+6, 10
+5000
+10 - comment
+stmt s; if ifs;
+Select s such that Follows(ifs, s)
+19
+5000
+11 - comment
+stmt s; if ifs;
+Select ifs such that Follows(s, ifs)
+7, 11
+5000
+12 - comment
+stmt s; if ifs;
+Select ifs such that Follows(ifs, s)
+11
+5000
+13 - comment
+assign a;
+Select a such that Follows(1, 2)
+1, 2, 3, 5, 6, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19
+5000
+14 - comment
+assign a;
+Select a such that Follows(a, 3)
+2 
+5000
+15 - comment
+assign a;
+Select a such that Follows(a, _)
+1, 2, 3, 5, 6, 10, 12, 14, 15
+5000
+16 - comment
+assign a;
+Select a such that Follows(_, a)
+2, 3, 6, 10, 13, 15, 18, 19
+5000
+17 - comment
+assign a; while w;
+Select a such that Follows(a, w)
+3, 15
+5000
+18 - comment
+assign a; while w;
+Select a such that Follows(w, a)
+10, 18
+5000
+19 - comment
+assign a; while w;
+Select a such that Follows(a, w)
+3, 15
+5000
+20 - comment
+assign a; while w;
+Select w such that Follows(w, a)
+4, 16
+5000
+21 - comment
+assign a; if ifs;
+Select a such that Follows(a, ifs)
+6, 10
+5000
+22 - comment
+assign a; if ifs;
+Select a such that Follows(ifs, a)
+19
+5000
+23 - comment
+assign a; if ifs;
+Select ifs such that Follows(a, ifs)
+7, 11
+5000
+24 - comment
+assign a; if ifs;
+Select ifs such that Follows(ifs, a)
+11
+5000
+25 - comment
+while w;
+Select w such that Follows(_, _)
+4, 16
+5000
+26 - comment
+while w;
+Select w such that Follows(w, _)
+4, 16
+5000
+27 - comment
+while w;
+Select w such that Follows(_, w)
+4, 16
+5000
+28 - comment
+if ifs;
+Select ifs such that Follows(_, _)
+7, 11
+5000
+29 - comment
+if ifs;
+Select ifs such that Follows(ifs, _)
+11
+5000
+30 - comment
+if ifs;
+Select ifs such that Follows(_, ifs)
+7, 11
+5000

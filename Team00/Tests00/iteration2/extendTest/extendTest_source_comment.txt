@@ -1,0 +1,53 @@
+procedure alpha {
+	read u;									// 1
+	read o;									// 2
+	a = a * b - c + d;						// 3
+	b = z * x * (y - (a + d));				// 4
+	c = (e + f) / a * ((x - z) * q + p);	// 5
+	call charlie;							// 6
+	z = z;									// 7
+	d = z * 2 + v - 10 * y;					// 8
+	call beta;								// 9
+}
+
+procedure beta {
+	print a;								// 10
+	print b;								// 11
+	print c;								// 12
+}
+
+procedure charlie {
+	if ((d >= 0) || ((a == q) && (w < i)) && (v == c)) then {	// 13
+		d = d / e - o;						// 14
+		call beta;							// 15
+	} else {
+		while ((a>0) && (b < d)) {			// 16
+			a = a + b * d;					// 17
+			e = e / y - a / d;				// 18
+		}
+	}
+	call delta;								// 19
+}
+
+procedure delta {
+	p = 1 + 2 + 3 + 4;						// 20
+	print p;								// 21
+	p = p - a + x % q;						// 22
+	print p;								// 23
+	if (a > 1) then {						// 24
+		u = y - t;							// 25
+		while (e <= w) {					// 26
+			read s;							// 27
+			e = s + o / d;					// 28
+			if (r <= 12) then {				// 29
+				r = r * r * n;				// 30
+			} else {
+				z = a + w - q * y / g;		// 31
+			}
+		}
+		print v;							// 32
+	} else {
+		print a;							// 33
+	}
+	print w;								// 34
+}

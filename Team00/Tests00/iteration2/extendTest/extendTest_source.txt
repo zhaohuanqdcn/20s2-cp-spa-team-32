@@ -1,0 +1,53 @@
+procedure alpha {
+	read u;									
+	read o;								
+	a = a * b - c + d;						
+	b = z * x * (y - (a + d));			
+	c = (e + f) / a * ((x - z) * q + p);	
+	call charlie;							
+	z = z;									
+	d = z * 2 + v - 10 * y;			
+	call beta;							
+}
+
+procedure beta {
+	print a;								
+	print b;							
+	print c;							
+}
+
+procedure charlie {
+	if ((d >= 0) || (((a == q) && (w < i)) && (v == c))) then {
+		d = d / e - o;						
+		call beta;							
+	} else {
+		while ((a>0) && (b < d)) {			
+			a = a + b * d;					
+			e = e / y - a / d;				
+		}
+	}
+	call delta;								
+}
+
+procedure delta {
+	p = 1 + 2 + 3 + 4;					
+	print p;								
+	p = p - a + x % q;					
+	print p;							
+	if (a > 1) then {					
+		u = y - t;							
+		while (e <= w) {				
+			read s;							
+			e = s + o / d;				
+			if (r <= 12) then {				
+				r = r * r * n;				
+			} else {
+				z = a + w - q * y / g;		
+			}
+		}
+		print v;							
+	} else {
+		print a;							
+	}
+	print w;
+}

@@ -1,0 +1,129 @@
+procedure alpha {
+	read u;													// 1
+	read o;													// 2
+	a = a * b - c + d;										// 3
+	b = z * x * (y - (a + d));								// 4
+	c = (e + f) / a * ((x - z) * q + p);					// 5
+	call charlie;											// 6
+	z = z;													// 7
+	d = z * 2 + v - 10 * y;									// 8
+	call beta;												// 9
+}
+
+procedure beta {
+	print a;												// 10
+	print b;												// 11
+	print c;												// 12
+}
+
+procedure charlie {
+	if ((d >= 0) || (((a == q) && (w < i)) && (v == c))) then {		// 13
+		d = d / e - o;												// 14
+		call beta;													// 15
+	} else {									
+		while ((a>0) && (b < d)) {									// 16
+			a = a + b * d;											// 17
+			e = e / y - a / d;										// 18
+		}
+	}
+	call delta;														// 19
+}
+
+procedure delta {
+	p = 1 + 2 + 3 + 4;									// 20
+	print p;											// 21
+	p = p - a + x % q;									// 22
+	print p;											// 23
+	if (a > 1) then {									// 24
+		u = y - t;										// 25
+		while (e <= w) {								// 26
+			read s;										// 27
+			e = s + o / d;								// 28
+			if (r <= 12) then {							// 29
+				r = r * r * n;							// 30
+			} else {				
+				z = a + w - q * y /	g;					// 31		
+			}		
+		}
+		print v;										// 32						
+	} else {
+		print a;										// 33
+	}
+	print w;											// 34
+}
+
+procedure echo {
+	read a;												// 35
+	read b;												// 36
+	c = 1;												// 37
+	d = c + 1;											// 38
+	e = c + d;											// 39
+				
+	while(a > 0) {										// 40	
+		a = a - 1; 										// 41
+		b = a + c;										// 42
+		if (b > c) then {								// 43
+			d = c;										// 44
+		} else {				
+			e = b;										// 45
+		}			
+	}
+	
+	a = a - b * c;										// 46	
+			
+	while ((((c > 0) && (d>0)) || (a < b)) || (e <= 20)) {		// 47
+		a = c + d * b;											// 48
+		b = ((a + b) * ((c / d) - e));							// 49
+		if (b <= c) then {										// 50
+			print b;											// 51
+		} else { 
+			while (c >= b) {									// 52
+				b = b + 1;										// 53
+				while (d >= e) {								// 54
+					d = d + e / c;								// 55
+				}
+				if ((a * b) < (c + d + e)) then {				// 56
+					a = a * b - c / e;							// 57
+					f = a / e - c;								// 58
+				} else { 
+					if ((a) < (c+d + e)) then {					// 59
+						a = a / b - c / e * d;					// 60
+					} else { 
+						f = f - a * d;							// 61
+						a = a + f;								// 62
+						if (f <= 100) then {					// 63
+							print f;							// 64
+						} else {	
+							while (f <= 100) {					// 65
+								f = f * f - f;					// 66
+							}
+						}
+						a = a * d;								// 67
+					}
+					z = x;										// 68
+					x = x -1 * 10;								// 69
+				}
+				a = p * p;										// 70
+			}		
+			print a;											// 71
+		}
+		z = a * (y - x) + ((u - o) + q);						// 72
+	}
+	c = c / a + (b - d);										// 73
+
+	if ((e < 10) && (a > e)) then {								// 74
+		e = e + 1;												// 75
+		a = a - e;												// 76
+	} else {
+		e = e - 1;												// 77
+		c = c + e;												// 78
+		while ((d <= 20) || (d < (a + b))) {					// 79
+			d = d + a * (c - e);								// 80
+		}
+
+		d = d - 1;												// 81
+	}
+
+	print a;													// 82
+	print b;													// 83
+}

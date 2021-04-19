@@ -1,0 +1,75 @@
+1 - comment
+stmt s;
+Select s with s.stmt# = 1
+1
+5000
+2 - comment
+read r;
+Select r with r.stmt# = 2
+2
+5000
+3 - comment
+print p;
+Select p with p.stmt# = 11
+11
+5000
+4 - comment
+call c;
+Select c with c.stmt# = 6
+6
+5000
+5 - comment
+while w;
+Select w with w.stmt# = 16
+16
+5000
+6 - comment
+if ifs;
+Select ifs with ifs.stmt# = 13
+13
+5000
+7 - comment
+assign a;
+Select a with a.stmt# = 4
+4
+5000
+8 - comment
+constant c;
+Select c with c.value = 2
+2
+5000
+9 - comment
+procedure p;
+Select p with p.procName = "beta"
+beta
+5000
+10 - comment
+call c;
+Select c with c.procName = "charlie"
+6
+5000
+11 - comment
+variable v;
+Select v with v.varName = "a"
+a
+5000
+12 - comment
+read r;
+Select r with r.varName = "u"
+1
+5000
+13 - comment
+print p;
+Select p with p.varName = "a"
+10, 33, 71, 82
+5000
+14 - comment
+stmt s;
+Select s with s.stmt# = 10 such that Follows(s, 11)
+10
+5000
+15 - comment
+variable v; procedure p;
+Select v such that Uses(p, v) with p.procName = "beta"
+a, b, c
+5000

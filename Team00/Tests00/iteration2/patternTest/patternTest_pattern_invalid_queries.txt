@@ -1,0 +1,115 @@
+1 - comment
+assign a;
+Select a pattern a(_, _"a")
+none
+5000
+2 - comment
+assign a;
+Select a pattern a(_, "a"_)
+none
+5000
+3 - comment
+assign a;
+Select a pattern a("a + b", _)]
+none
+5000
+4 - comment
+assign a; variable v;
+Select a pattern a(_, v)
+none
+5000
+5 - comment
+assign a; constant c;
+Select a pattern a(c, _)
+none
+5000
+6 - comment
+assign a; while w;
+Select a pattern a(w, _)
+none
+5000
+7 - comment
+assign a; if ifs;
+Select a pattern a(ifs, _)
+none
+5000
+8 - comment
+assign a;
+Select a pattern a(_, "a")
+none
+5000
+9 - comment
+assign a;
+Select a pattern a("g", _)
+none
+5000
+10 - comment
+assign a;
+Select a pattern a(_, "a - b")
+none
+5000
+11 - comment
+assign a;
+Select a pattern a(_, _"a + b"_)
+none
+5000
+1 - comment
+if ifs;
+Select ifs pattern ifs(_, _, "a")
+none
+5000
+2 - comment
+if ifs;
+Select ifs pattern ifs(_, "a", _)
+none
+5000
+3 - comment
+if ifs;
+Select ifs pattern ifs(_, "a", "b")
+none
+5000
+4 - comment
+if ifs;
+Select ifs pattern ifs(_, _"a"_, _"b"_)
+none
+5000
+5 - comment
+if ifs;
+Select ifs pattern ifs("z", _, _)
+none
+5000
+6 - comment
+if ifs; constant c;
+Select ifs pattern ifs(c, _, _)
+none
+5000
+7 - comment
+if ifs; variable v;
+Select ifs pattern ifs(_, v, _)
+none
+5000
+1 - comment
+while w;
+Select w pattern w(_, _"a"_)
+none
+5000
+2 - comment
+while w; variable v;
+Select w pattern w(_, v)
+none
+5000
+3 - comment
+while w;
+Select w pattern w("wrong", _)
+none
+5000
+4 - comment
+while w; constant c;
+Select w pattern w(c, _)
+none
+5000
+5 - comment
+while w; 
+Select w pattern w(1, _)
+none
+5000

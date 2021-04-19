@@ -1,0 +1,165 @@
+1 - comment
+stmt s;
+Select s with s.stmt# = "1"
+none
+5000
+2 - comment
+stmt s;
+Select s with s.stmt# = 100
+none
+5000
+3 - comment
+stmt s;
+Select s with s.procName = "alpha"
+none
+5000
+4 - comment
+stmt s;
+Select s with s.varName = "a"
+none
+5000
+5 - comment
+stmt s;
+Select s with s.value = 4
+none
+5000
+6 - comment
+assign a;
+Select a with a.stmt# = "2"
+none
+5000
+7 - comment
+assign a;
+Select a with a.value = 3
+none
+5000
+8 - comment
+assign a;
+Select a with a.varName = "x"
+none
+5000
+9 - comment
+assign a;
+Select a with a.procName = "a"
+none
+5000
+10 - comment
+read r;
+Select r with r.stmt# = "x"
+none
+5000
+11 - comment
+read r;
+Select r with r.varName = 1
+none
+5000
+12 - comment
+read r;
+Select r with r.procName = "as"
+none
+5000
+13 - commennt
+print p;
+Select p with p.stmt# = "a"
+none
+5000
+14 - comment
+print p;
+Select p with p.varName = 5
+none
+5000
+15 - comment
+print p;
+Select p with p.value = 32
+none
+5000
+16 - comment
+print p;
+Select p with p.procName = "alpha"
+none
+5000
+17 - comment
+while w;
+Select w with w.stmt# = 128
+none
+5000
+18 - comment
+while w;
+Select w with w.varName = "a"
+none
+5000
+19 - comment
+while w;
+Select w with w.value =  23
+none
+5000
+20 - comment
+while w;
+Select w  with w.procName ="beta"
+none
+5000
+21 - comment
+if ifs;
+Select ifs with ifs.stmt# = " 1"
+none
+5000
+22 - comment
+if ifs;
+Select ifs with ifs.value = 0
+none
+5000
+23 - comment
+if ifs;
+Select ifs with ifs.varName = "a"
+none
+5000
+24 - comment
+constant c;
+Select c with c.value = a
+none
+5000
+25 - comment
+constant c;
+Select c with c.stmt# = 1
+none
+5000
+26 - comment
+constant c;
+Select c with c.varName = "a"
+none
+5000
+27 - comment
+call c;
+Select c with c.stmt# = "1"
+none
+5000
+28 - comment
+call c;
+Select c with c.value = 1
+none
+5000
+29 - comment
+call c;
+Select c with c.procName =  2
+none
+5000
+30 - comment
+procedure p;
+Select p with p.procName = "ze"
+none
+5000
+31 - comment
+procedure p;
+Select p with p.varName = "alpha"
+none
+5000
+32 - comment
+procedure p;
+Select p with p.stmt# = 1
+none
+5000
+33 - comment
+if ifs; while w;
+Select w such that Parent(ifs, w) with w.stmt# = 10
+none
+5000

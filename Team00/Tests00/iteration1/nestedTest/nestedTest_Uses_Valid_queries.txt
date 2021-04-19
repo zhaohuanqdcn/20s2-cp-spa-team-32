@@ -1,0 +1,100 @@
+1 - comment
+stmt s;
+Select s such that Uses(s, _)
+2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+5000
+2 - comment
+stmt s;
+Select s such that Uses(s, "a")
+2, 3, 4, 5, 6, 10, 11, 13, 16, 17, 19
+5000
+3 - comment
+stmt s; variable v;
+Select s such that Uses(s, v)
+2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+5000
+4 - comment
+stmt s; variable v;
+Select v such that Uses(s, v)
+a, b, c, d, e
+5000
+5 - comment
+assign a;
+Select a such that Uses(a, _)
+2, 3, 5, 6, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19
+5000
+6 - comment
+assign a;
+Select a such that Uses(a, "a")
+2, 3, 5, 6, 10, 13, 17, 19
+5000
+7 - comment
+assign a; variable v;
+Select a such that Uses(a, v)
+2, 3, 5, 6, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19
+5000
+8 - comment
+assign a; variable v;
+Select v such that Uses(a, v)
+a, b, c, d, e
+5000
+9 - comment
+while w;
+Select w such that Uses(w, _)
+4, 16
+5000
+10 - comment
+while w;
+Select w such that Uses(w, "a")
+4, 16
+5000
+11 - comment
+while w; variable v;
+Select w such that Uses(w, v)
+4, 16
+5000
+12 - comment
+while w; variable v;
+Select v such that Uses(w, v)
+a, b, c, d, e
+5000
+13 - comment
+if ifs;
+Select ifs such that Uses(ifs, _)
+7, 11
+5000
+14 - comment
+if ifs;
+Select ifs such that Uses(ifs, "a")
+11
+5000
+15 - comment
+if ifs; variable v;
+Select ifs such that Uses(ifs, v)
+7, 11
+5000
+16 - comment
+if ifs; variable v;
+Select v such that Uses(ifs, v)
+a, b, c, d, e
+5000
+17 - comment
+variable v;
+Select v such that Uses(4, v)
+a, b, c
+5000
+18 - comment
+variable v;
+Select v such that Uses(7, v)
+b, c
+5000
+19 - comment
+variable v;
+Select v such that Uses(11, v)
+a, b, c, d, e
+5000
+20 - comment
+variable v;
+Select v such that Uses(16, v)
+a, b, c, d, e
+5000

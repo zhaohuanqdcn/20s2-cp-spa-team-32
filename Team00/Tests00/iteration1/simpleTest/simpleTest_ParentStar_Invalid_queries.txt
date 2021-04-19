@@ -1,0 +1,205 @@
+1 - comment
+stmt s;
+Select s such that Parent*(1, 2)
+none
+5000
+2 - comment
+stmt s;
+Select s such that Parent*(3, 2)
+none
+5000
+3 - comment
+stmt s;
+Select s such that Parent*(s, _)
+none
+5000
+4 - comment
+stmt s;
+Select s such that Parent*(_, s)
+none
+5000
+5 - comment
+stmt s;
+Select s such that Parent*(s, s)
+none
+5000
+6 - comment
+stmt s;
+Select s such that Parent*(s, "s")
+none
+5000
+7 - comment
+stmt s;
+Select s such that Parent*(s, 0)
+none
+5000
+8 - comment
+while w;
+Select w such that Parent*(w, _)
+none
+5000
+9 - comment
+while w;
+Select w such that Parent*(_, w)
+none
+5000
+10 - comment
+while w;
+Select w such that Parent*(w, w)
+none
+5000
+11 - comment
+while w;
+Select w such that Parent*(w, "w")
+none
+5000
+12 - comment
+while w;
+Select w such that Parent*(w, 3)
+none
+5000
+13 - comment 
+while w;
+Select w such that Parent*(2, w)
+none
+5000
+14 - comment
+while w; stmt s;
+Select s such that Parent*(w, s)
+none
+5000
+15 - comment
+while w; stmt s;
+Select s such that Parent*(s, w)
+none
+5000
+16 - comment
+while w; stmt s;
+Select w such that Parent*(s, w)
+none
+5000
+17 - comment
+while w; stmt s;
+Select w such that Parent*(w, w)
+none
+5000
+18 - comment
+if ifs; 
+Select ifs such that Parent*(ifs, ifs)
+none
+5000
+19 - comment
+if ifs;
+Select ifs such that Parent*(ifs, _)
+none
+5000
+20 - comment
+if ifs;
+Select ifs such that Parent*(_, ifs)
+none
+5000
+21 - comment
+if ifs;
+Select ifs such that Parent*(3, ifs)
+none
+5000
+22 - comment
+if ifs;
+Select ifs such that Parent*(ifs, 3)
+none
+5000
+23 - comment
+if ifs; stmt s;
+Select ifs such that Parent*(s, ifs)
+none
+5000
+24 - comment
+if ifs; stmt s;
+Select ifs such that Parent*(ifs, s)
+none
+5000
+25 - comment
+if ifs; stmt s;
+Select s such that Parent*(ifs, s)
+none
+5000
+26 - comment
+if ifs; stmt s;
+Select s such that Parent*(s, ifs)
+none
+5000
+27 - comment
+variable v;
+Select v such that Parent*(v, v)
+none
+5000
+28 - comment
+variable v;
+Select v such that Parent*(v, _)
+none
+5000
+29 - comment
+variable v;
+Select v such that Parent*(_, v)
+none
+5000
+30 - comment
+variable v; stmt s;
+Select v such that Parent*(s, v)
+none
+5000
+31 - comment
+variable v; stmt s;
+Select v such that Parent*(v, s)
+none
+5000
+32 - comment
+variable v; stmt s;
+Select s such that Parent*(s, v)
+none
+5000
+33 - comment
+constant c; 
+Select c such that Parent*(c, c)
+none
+5000
+34 - comment
+constant c;
+Select c such that Parent*(c, _)
+none
+5000
+35 - comment
+constant c; 
+Select c such that Parent*(_, c)
+none
+5000
+36 - comment
+constant c;
+Select c such that Parent*(4, c)
+none
+5000
+37 - comment
+constant c; 
+Select c such that Parent*(c, 3)
+none
+5000
+38 - comment
+constant c; stmt s;
+Select s such that Parent*(s, c)
+none
+5000
+39 - comment 
+constant c; stmt s;
+Select s such that Parent*(c, s)
+none
+5000
+40 - comment
+constant c; stmt s;
+Select c such that Parent*(s, c)
+none
+5000
+41 - comment
+constant c; stmt s; 
+Select c such that Parent*(c, s)
+none
+5000

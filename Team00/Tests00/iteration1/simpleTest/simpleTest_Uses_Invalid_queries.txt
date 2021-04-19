@@ -1,0 +1,185 @@
+1 - comment
+stmt s;
+Select s such that Uses(s, s)
+none
+5000
+2 - comment
+stmt s;
+Select s such that Uses(s, 3)
+none
+5000
+3 - comment
+stmt s; 
+Select s such that Uses(s, "S")
+none
+5000
+4 - comment
+stmt s; variable v;
+Select s such that Uses(v, s)
+none
+5000
+5 - comment
+stmt s; variable v;
+Select v such that Uses(v, s)
+none
+5000
+6 - comment 
+stmt s; constant c;
+Select s such that Uses(c, s)
+none
+5000
+7 - comment
+stmt s; constant c;
+Select c such that Uses(c, s)
+none
+5000
+8 - comment
+assign a;
+Select a such that Uses(a, a)
+none
+5000
+9 - comment
+assign a;
+Select a such that Uses(a, "A")
+none
+5000
+10 - comment
+assign a;
+Select a such that Uses(a, 2)
+none
+5000
+11 - comment
+assign a; variable v;
+Select a such that Uses(v, a)
+none
+5000
+12 - comment
+assign a; variable v;
+Select v such that Uses(v, a)
+none
+5000
+13 - comment
+assign a; constant c;
+Select a such that Uses(c, a)
+none
+5000
+14 - comment
+assign a; constant c;
+Select c such that Uses(c, a)
+none
+5000
+15 - comment
+while w; 
+Select w such that Uses(w, w)
+none
+5000
+16 - comment
+while w;
+Select w such that Uses(w, "W")
+none
+5000
+17 - comment
+while w;
+Select w such that Uses(w, 34)
+none
+5000
+18 - comment
+while w; variable v;
+Select v such that Uses(v, w)
+none
+5000
+19 - comment
+while w; variable v;
+Select w such that Uses(v, w)
+none
+5000
+20 - comment
+while w; constant c;
+Select c such that Uses(c, w)
+none
+5000
+21 - comment
+while w; constant c;
+Select w such that Uses(c, w)
+none
+5000
+22 - comment
+if ifs; 
+Select ifs such that Uses(ifs, ifs)
+none
+5000
+23 - comment
+if ifs;
+Select ifs such that Uses(ifs, "IFS")
+none
+5000
+24 - comment
+if  ifs;
+Select ifs such that Uses(ifs, 3)
+none
+5000
+25 - comment
+if ifs; variable v;
+Select v such that Uses(v, ifs)
+none
+5000
+26 - comment
+if ifs; variable v;
+Select ifs such that Uses(v, ifs)
+none
+5000
+27 - comment
+if  ifs; constant c;
+Select c such that Uses(c, ifs)
+none
+5000
+28 - comment
+if  ifs; constant c;
+Select ifs such that Uses(c, ifs)
+none
+5000
+29 - comment
+variable v;
+Select v such that Uses(v, v)
+none
+5000
+30 - comment
+variable v;
+Select v such that Uses(_, v)
+none
+5000
+31 - comment
+constant c;
+Select c such that Uses(c, c)
+none
+5000
+32 - comment
+constant c;
+Select c such that Uses(_, c)
+none
+5000
+33 - comment
+constant c;
+Select c such that Uses(2, c)
+none
+5000
+34 - comment
+constant c; stmt s;
+Select c such that Uses(s, c)
+none
+5000
+35 - comment
+constant c; stmt s;
+Select s such that Uses(s, c)
+none
+5000
+36 - comment
+constant c; assign a;
+Select c such that Uses(a, c)
+none
+5000
+37 - comment
+constant c; assign a;
+Select a such that Uses(a, c)
+none
+5000

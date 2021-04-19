@@ -1,0 +1,70 @@
+1 - comment
+stmt s;
+Select s such that Follows*(1, 2)
+1, 2, 3, 4
+5000
+2 - comment
+stmt s;
+Select s such that Follows*(_, _)
+1, 2, 3, 4
+5000
+3 - comment
+stmt s;
+Select s such that Follows*(s, _)
+1, 2, 3
+5000
+4 - comment
+stmt s;
+Select s such that Follows*(_, s)
+2, 3, 4
+5000
+5 - comment
+stmt s;
+Select s such that Follows*(1, s)
+2, 3, 4
+5000
+6 - comment
+stmt s;
+Select s such that Follows*(2, s)
+3, 4
+5000
+7 - comment
+stmt s; 
+Select s such that Follows*(s, 4)
+1, 2, 3
+5000
+8 - comment
+stmt s;
+Select s such that Follows*(s, 3)
+1, 2
+5000
+9 - comment
+stmt s; assign a;
+Select s such that Follows*(s, a)
+1, 2, 3
+5000
+10 - comment
+stmt s; assign a;
+Select s such that Follows*(a, s)
+2, 3, 4
+5000
+11 - comment
+stmt s; assign a;
+Select a such that Follows*(s, a)
+2, 3, 4
+5000
+12 - comment
+stmt s; assign a;
+Select a such that Follows*(a, s)
+1, 2, 3
+5000
+13 - comment
+assign a;
+Select a such that Follows*(a, _)
+1, 2, 3
+5000
+14 - comment
+assign a;
+Select a such that Follows*(_, a)
+2, 3, 4
+5000
